@@ -221,6 +221,7 @@ img {
     border-color: white;
     color: white;
     padding: 4px 24px;
+    cursor: pointer;
 }
 
 .footer {
