@@ -1,3 +1,11 @@
+.quote-container, 
+.randomcontainer, 
+body, 
+html {
+    height: 100%;
+    margin: 0%;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -27,30 +35,30 @@ body {
     gap: 20px;
 }
 
-.subheader {
+.herocontainer {
     display: flex;
-    flex-flow: column;
+    flex-direction: row;
+    flex: 1;
+    gap: 50px;
     background-color: #1f2937;
+    padding: 50px;
     margin: 24px;
 }
 
-.hero {
+.subheader {
     display: flex;
-    width: 500px;
-    height: 200px;
-    flex-flow: column wrap;
-    flex: 0;
-    justify-content: space-around;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+}
+
+.hero {
     font-size: 48px;
     font-weight: 900;
     color: #f9faf8; 
 }
 
 .subhero {
-    display: flex;
-    flex-flow: row wrap;
-    width: 500px;
-    height: auto;
     color: #e5e7eb;
     font-size: 18px;
 }
@@ -70,11 +78,80 @@ body {
 .placeholder {
     display: flex;
     flex-direction: row;
-    width: 500px;
-    height: 200px;
-    margin-left: auto;
-    text-align: center;
+    width: 700px;
+    height: 250px;
     font-size: 18px;
+    margin-left: auto;
+    justify-content: center;
+    align-items: center;
     color: #e5e7eb;
     background-color: gray;
+}
+
+
+
+.randomcontainer {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    align-items: center;
+    text-align: center;
+    padding: 24px;
+    font-size: 36px;
+    font-weight: 900;
+    color: #1f2937;
+}
+
+.random-img {
+    display: flex;
+    flex-direction: row;
+    gap: 200px;
+    margin: 24px;
+    flex: 1;
+}
+
+img {
+    border: 2px solid #3882f6;
+    border-radius: 25%;
+}
+
+.random-items {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    gap: 100px;
+    margin: 24px;
+}
+
+#item {
+    color: #1f2937;
+    font-size: 18px;
+    font-weight: 200;
+    font-style: italic;
+    align-items: baseline;
+}
+
+.quote-container {
+    background-color: #e5e7eb;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    padding: 36px 200px;
+
+}
+
+.quote {
+    color: #1f2937;
+    font-style: italic;
+    font-size: 36px;
+    font-weight: light;
+    margin: 24px;
+}
+
+p {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: right;
 }
