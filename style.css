@@ -102,34 +102,36 @@ body {
     color: #1f2937;
 }
 
-.random-img {
+.random{
     display: flex;
     flex-direction: row;
-    gap: 200px;
     margin: 24px;
     flex: 1;
+    font-size: 24px;
+    font-weight: 200;
+    font-style: italic;
 }
+
+.image-one,
+.image-two,
+.image-three,
+.image-four {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+
+}
+
 
 img {
     border: 2px solid #3882f6;
     border-radius: 25%;
 }
 
-.random-items {
-    display: flex;
-    flex-direction: row;
-    flex: 1;
-    gap: 100px;
-    margin: 24px;
-}
-
-#item {
-    color: #1f2937;
-    font-size: 18px;
-    font-weight: 200;
-    font-style: italic;
-    align-items: baseline;
-}
 
 .quote-container {
     background-color: #e5e7eb;
