@@ -85,6 +85,7 @@ a {
 .placeholder {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     flex: 1;
     font-size: 18px;
     margin-left: auto;
